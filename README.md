@@ -169,7 +169,8 @@ IObservable<IEnumerable<T>> GetAllObjects<T>();
 IObservable<IDictionary<string, T>> GetObjects<T>(IEnumerable<string> keys);
 
 /*
- * Save items to the store
+ * Save items to the store 
+ * An absoluteExpiration of null sets to expiration to DateTime.MaxValue in SQLite implementation.
  */
 
 // Insert a single item
